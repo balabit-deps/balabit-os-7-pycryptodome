@@ -1,0 +1,2 @@
+*.egg-info/*
+.separate_namespace

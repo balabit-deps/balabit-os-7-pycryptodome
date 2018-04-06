@@ -1,0 +1,28 @@
+pycryptodome (3.4.7-1ubuntu1) bionic; urgency=medium
+
+  * SECURITY UPDATE: weak ElGamal key parameters
+    - debian/patches/CVE-2018-6594.patch: choose a square residue in
+      lib/Crypto/PublicKey/ElGamal.py.
+    - CVE-2018-6594
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 06 Apr 2018 08:35:25 -0400
+
+pycryptodome (3.4.7-1) unstable; urgency=medium
+
+  * New upstream release (3.4.7)
+  * Use secure URI in debian/watch
+  * Remove new-package-should-not-package-python2-module lintian override
+  * Update extra-license-file lintian override (Sphinx now appears to create a
+    copy of the source file with extension rst.txt)
+  * Bump Standards-Version from 3.9.8 to 4.1.1 (no change required)
+  * Add missing build dependency on python3-sphinx-rtd-theme
+
+ -- Christopher Hoskin <mans0954@debian.org>  Sat, 04 Nov 2017 10:24:18 +0000
+
+pycryptodome (3.4.6-1) unstable; urgency=low
+
+  * source package automatically created by stdeb 0.8.5
+  * Initial release. (Closes: #864294: ITP: pycryptodome --
+    cryptographic library for Python)
+
+ -- Christopher Hoskin <mans0954@debian.org>  Sun, 11 Jun 2017 20:51:56 +0100
